@@ -12,7 +12,6 @@
 }
 
 .d2-style {
-
 border-color: #3796fb;
 background-color: #3796fb;
 border-radius: 5px;
@@ -27,5 +26,12 @@ img{
 border-radius: 7px;
 border-color: #4267fc;
 border-style: solid;
+}
 
+h1{
+	text-align: center;
+}
+
+a{
+color: #007bff;
 }
