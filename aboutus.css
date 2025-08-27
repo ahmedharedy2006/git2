@@ -1,16 +1,13 @@
 .a-style{
-color: #f5ae21;
+color: #e3753e;
 
 }
 
-ul{
+.b-style{
 
-display: inline;
-
-}
-
-li{
-
-display: inline;
-
+background-color:#f8f8f3;
+border-radius: 4px;
+border-color: black;
+border-width: 3px;
+padding: 5px;
 }
