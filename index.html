@@ -2,19 +2,98 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Home</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--Internal CSS-->
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #EFECE9;
+}
+.navbar {
+	display: flex;
+	margin-top: -45px;
+	font-size: 25px;
+	justify-content: center;
+	margin-right: 60px;
+}
+.navbar nav a {
+	text-decoration: none;
+	color: #000000;
+	margin-left: 60px;
+    font-weight: 500;
+}
+.navbar nav a:hover {
+	font-weight: 600;
+}
+.icon img{
+	width: 60px;
+	height: 60px;
+	margin-top: 5px;
+    border: none;
+    margin-left: 10px;
+}
+.h-style h1 {
+	margin-top: 40px;
+	font-style: italic;
+	font-size: 100px;
+}
+.nav-style {
+	background-color: #FFFFFF;
+	padding-bottom: 20px;
+}
+.h-style a {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-top: 25px;
+	border-radius: 40px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	background-color: #000000;
+	font-size: x-large;
+}
+.h-style {
+	text-align: center;
+	margin-top: 250px;
+}
+.h-style p {
+	color: #000000;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-bottom: -10px;
+	align-items: center;
+	font-size: 20px;
+}
+</style>
 </head>
 
 <body>
-<h1>hbjbjn</h1>
-<hr>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ea adipisci est, mollitia saepe, asperiores ut nisi excepturi hic doloremque cupiditate quisquam dolore dignissimos sit ab repellat rem laborum optio!</p>
-<h2>ujdgfiwyaer</h2>
-<h2>dmckdmxc,sdlx,odcx,</h2>
-<hr>
-<hr>
-<hr>
-<hr>
+<!--Navigation Bar-->
+<div class="nav-style">
+    <div class="icon">
+        <img src="pics/icon.png" alt="Clothing store icon">
+    </div>
+        <div class="navbar">
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="aboutus.html">About Us</a>
+        </nav>
+    </div>
+</div>
+<!--Hero Section-->
+<div class="h-style">
+    <h1>Where Elegance Meets Style</h1>
+    <p>Discover the latest fashion trends with our new arrivals. From casual wear to elegant outfits,</p>
+    <p>we’ve got your style covered.</p>
+    <a href="product.html">Get Started</a>
+</div>
 </body>
 </html>
