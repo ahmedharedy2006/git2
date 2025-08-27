@@ -12,8 +12,8 @@
 }
 
 .d2-style {
-border-color: #3796fb;
-background-color: #3796fb;
+border-color: #fb8;
+background-color: #fb8;
 border-radius: 5px;
 
 padding-top: 4px;
@@ -24,7 +24,7 @@ padding-left: 7px;
 
 img{
 border-radius: 7px;
-border-color: #4267fc;
+border-color:#EFECE9;
 border-style: solid;
 }
 
@@ -33,7 +33,7 @@ h1{
 }
 
 a{
-color: #007bff;
+color: #e3753e;
 }
 
 .d3-style{
@@ -58,4 +58,9 @@ margin: 5px;
 	padding: 5px;
 	text-align: center;
 	display: block;
+}
+body{
+
+	background-color: #EFECE9;
+
 }
