@@ -62,11 +62,40 @@ margin-left: 520px;
 	display: block;
 }
 
-body{
-	background-color: #EFECE9;
-}
-
-
 .d6-style{
 	display: inline;
+}
+
+.nav-style {
+	background-color: #FFFFFF;
+}
+.navbar {
+	display: flex;
+	font-size: 25px;
+	justify-content: space-between;
+	align-items:center;
+}
+.navbar nav a {
+	text-decoration: none;
+	color: #000000;
+	margin-left: 60px;
+    font-weight: 500;
+}
+.navbar nav a:hover {
+	font-weight: 600;
+}
+
+.navbar .btns {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 10px;
+}
+.navbar .btns a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: 500;
+}
+.navbar .btns a:hover {
+	font-weight: 600;
 }

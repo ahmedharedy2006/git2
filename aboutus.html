@@ -5,8 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us</title>
     <link href="aboutus.css" rel="stylesheet" type="text/css">
+    <style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #EFECE9;
+}
+.nav-style {
+	background-color: #FFFFFF;
+}
+.navbar {
+	display: flex;
+	font-size: 25px;
+	justify-content: space-between;
+	align-items:center;
+}
+.navbar nav a {
+	text-decoration: none;
+	color: #000000;
+	margin-left: 60px;
+    font-weight: 500;
+}
+.navbar nav a:hover {
+	font-weight: 600;
+}
+.icon img{
+	width: 60px;
+	height: 60px;
+	margin-top: 5px;
+    border: none;
+	margin-left: 50px;
+	position: relative;
+	right: 40px;
+}
+
+.navbar .btns {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 10px;
+}
+.navbar .btns a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: 500;
+}
+.navbar .btns a:hover {
+	font-weight: 600;
+}
+</style>
 </head>
-<body>
+<body >
+
+    <div class="nav-style">
+        <div class="navbar">
+            <div class="icon">
+                <div class="icon">
+                    <img src="pics/icon.png" alt="Clothing store icon">
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+    	<div class="btns">
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+        </div>
+
+        </div>
+  
     <div class="b-style">
 
     <center>
