@@ -66,36 +66,32 @@ margin-left: 520px;
 	display: inline;
 }
 
-.nav-style {
-	background-color: #FFFFFF;
+*{
+	margin: 0px;
+	padding: 0px;
 }
-.navbar {
-	display: flex;
-	font-size: 25px;
-	justify-content: space-between;
-	align-items:center;
+nav {
+	font-size: 20px;
 }
-.navbar nav a {
-	text-decoration: none;
+.navbar .nav-link {
 	color: #000000;
-	margin-left: 60px;
-    font-weight: 500;
+	transition: all 0.16s ease;
 }
-.navbar nav a:hover {
-	font-weight: 600;
+.navbar .nav-link:hover {
+  font-weight: bold;
+  transform: scale(1.05);
 }
-
-.navbar .btns {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    right: 10px;
+.dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
 }
-.navbar .btns a {
-	text-decoration: none;
-	color: #000000;
-	font-weight: 500;
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #000 !important; 
+  color: #fff !important;
 }
-.navbar .btns a:hover {
-	font-weight: 600;
+.icon img{
+	width: 60px;
+	height: 60px;
+    border: none;
 }

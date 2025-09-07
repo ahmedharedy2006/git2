@@ -4,11 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-            <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB">
-            <link href="/css/style.css" rel="stylesheet">
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+nav {
+	font-size: 20px;
+}
+.navbar .nav-link {
+	color: #000000;
+	transition: all 0.16s ease;
+}
+.navbar .nav-link:hover {
+  font-weight: bold;
+  transform: scale(1.05);
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #000 !important; 
+  color: #fff !important;
+}
+.icon img{
+	width: 60px;
+	height: 60px;
+    border: none;
+}
+</style>
 </head>
 <body>
-
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+	<div class="icon">
+		<a class="navbar-brand" href="index.html"><img src="pics/icon.png" alt="Clothing store icon"></a>
+	</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-5">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="product.html">Men</a></li>
+            <li><a class="dropdown-item" href="#">Women</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Kids</a></li>
+          </ul>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+          <a class="nav-link active me-3" aria-current="page" href="#Login">Login</a>
+          <a class="nav-link active" aria-current="page" href="password.html">Register</a>   
+	  </div>
+    </div>
+  </div>
+</nav>
   <div class="card">
   <div class="card-header">
   <h5>Welcome to register page .</h5>
@@ -24,6 +93,6 @@
   </div>
 </div>
 
-<script src="/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
