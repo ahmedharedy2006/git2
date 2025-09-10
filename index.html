@@ -2,68 +2,68 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<!--Bootstrap CSS-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.min.css">
 <!--Internal CSS-->
 <style>
 *{
 	margin: 0px;
 	padding: 0px;
 }
-body {
-	background-color: #EFECE9;
+nav {
+	font-size: 20px;
 }
-.nav-style {
-	background-color: #FFFFFF;
-}
-.navbar {
-	display: flex;
-	font-size: 25px;
-	justify-content: space-between;
-	align-items:center;
-}
-.navbar nav a {
-	text-decoration: none;
+.navbar .nav-link {
 	color: #000000;
-	margin-left: 60px;
-	font-weight: 600; /* Always bold */
-	transition: color 0.2s, text-decoration 0.2s;
+	transition: all 0.16s ease;
 }
-.navbar nav a:hover {
-	color: #e3753e;
-	text-decoration: underline;
+.navbar .nav-link:hover {
+  font-weight: bold;
+  transform: scale(1.05);
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #000 !important; 
+  color: #fff !important;
 }
 .icon img{
 	width: 60px;
 	height: 60px;
-	margin-top: 5px;
     border: none;
-	margin-left: 50px;
-	position: relative;
-	right: 40px;
 }
 .hero {
-	text-align: center;
-	margin-top: 250px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	height: 100vh;
+	background: url(pics/hero.jpg) right/cover;
+	padding-left: 2%;
+}
+.hero h1{
+	font-size: small;
 }
 .hero h1 {
-	margin-top: 40px;
 	font-style: italic;
-	font-size: 100px;
+	font-size: 80px;
 }
 .hero p {
 	color: #000000;
 	text-decoration: none;
-	margin-top: 10px;
-	margin-bottom: -10px;
-	align-items: center;
+	margin-bottom: -5px;
 	font-size: 20px;
 }
 .hero a {
 	text-decoration: none;
 	color: #FFFFFF;
 	display: inline-block;
-	margin-top: 25px;
+	margin-top: 15px;
 	border-radius: 40px;
 	padding-top: 20px;
 	padding-right: 30px;
@@ -71,49 +71,105 @@ body {
 	padding-bottom: 20px;
 	background-color: #000000;
 	font-size: x-large;
+	transition: all 0.16s ease;
 }
-.navbar .btns {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    right: 10px;
+.hero a:hover {
+	color: #E6D1B6;
+	transform: scale(1.08);
 }
-.navbar .btns a {
-	text-decoration: none;
-	color: #000000;
-	font-weight: 500;
+.carousel-item img {
+	
+	height: 500px;
+	object-fit: fill;
 }
-.navbar .btns a:hover {
-	font-weight: 600;
+@media (max-width: 768px) {
+  .hero {
+	background: url(pics/hero-mobile.jpg) center/cover;
+	padding-left: 0;
+} .hero h1{
+	font-size: 60px;
+	}
 }
 </style>
 </head>
 
 <body>
 <!--Navigation Bar-->
-<div class="nav-style">
-        <div class="navbar">
-        	<div class="icon">
-        		<img src="pics/icon.png" alt="Clothing store icon">
-    		</div>
-			<nav>
-			<a href="index.html">Home</a>
-			<a href="product.html">Products</a>
-			<a href="contact.html">Contact</a>
-			<a href="aboutus.html">About Us</a>
-			</nav>
-		<div class="btns">
-			<a href="login.html">Login</a>
-			<a href="register.html">Register</a>
-			</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+	<div class="icon">
+		<a class="navbar-brand" href="index.html"><img src="pics/icon.png" alt="Clothing store icon"></a>
+	</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-5">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="product.html">Men</a></li>
+            <li><a class="dropdown-item" href="#">Women</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Kids</a></li>
+          </ul>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+          <a class="nav-link active me-3" aria-current="page" href="#Login">Login</a>
+          <a class="nav-link active" aria-current="page" href="register.html">Register</a>   
+	  </div>
     </div>
-</div>
+  </div>
+</nav>
 <!--Hero Section-->
-<div class="hero">
-    <h1>Where Elegance Meets Style</h1>
-    <p>Discover the latest fashion trends with our new arrivals. From casual wear to elegant outfits,</p>
-    <p>we’ve got your style covered.</p>
-    <a href="product.html">Get Started</a>
+	<div class="hero container-fluid d-flex flex-column justify-content-center">
+    	<h1>Where Elegance Meets Style</h1>
+    	<p>Discover the latest fashion trends with our new arrivals. From casual wear to elegant outfits,</p>
+    	<p>we’ve got your style covered.</p>
+    	<a href="product.html">Get Started <i class="bi bi-arrow-right"></i></a>
+	</div>
+	<!--Carousel Section-->
+	<div class="container">
+		<h1 class="text-center my-5">NEW ARRIVALS!</h1>
+		<div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pics/pics 1.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pics/pics 2.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pics/pics 3.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+ </div>
 </div>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

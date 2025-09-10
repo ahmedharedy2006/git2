@@ -65,6 +65,7 @@ margin-left: 520px;
 	display: inline;
 }
 
+<<<<<<< HEAD
 
 *{
 	margin: 0px;
@@ -75,22 +76,24 @@ body {
 }
 .nav-style {
 	background-color: #FFFFFF;
+=======
+*{
+	margin: 0px;
+	padding: 0px;
+>>>>>>> 151adac924a3f20d98388dba667325d8975ebb38
 }
-.navbar {
-	display: flex;
-	font-size: 25px;
-	justify-content: space-between;
-	align-items:center;
+nav {
+	font-size: 20px;
 }
-.navbar nav a {
-	text-decoration: none;
+.navbar .nav-link {
 	color: #000000;
-	margin-left: 60px;
-    font-weight: 500;
+	transition: all 0.16s ease;
 }
-.navbar nav a:hover {
-	font-weight: 600;
+.navbar .nav-link:hover {
+  font-weight: bold;
+  transform: scale(1.05);
 }
+<<<<<<< HEAD
 .icon img{
 	width: 60px;
 	height: 60px;
@@ -105,16 +108,28 @@ body {
     gap: 20px;
     position: relative;
     right: 10px;
+=======
+.dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+>>>>>>> 151adac924a3f20d98388dba667325d8975ebb38
 }
-.navbar .btns a {
-	text-decoration: none;
-	color: #000000;
-	font-weight: 500;
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #000 !important; 
+  color: #fff !important;
 }
+<<<<<<< HEAD
 .navbar .btns a:hover {
 	font-weight: 600;
 }
 
 .btn-primary{
     margin: 5px;
+=======
+.icon img{
+	width: 60px;
+	height: 60px;
+    border: none;
+>>>>>>> 151adac924a3f20d98388dba667325d8975ebb38
 }
