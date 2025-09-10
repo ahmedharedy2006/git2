@@ -7,7 +7,7 @@ $db = "database";
 $conn=mysqli_connect($host, $user, $password, $db);
 
 if ($conn) {
-    echo "    " ;
+    echo "  " ;
 }else{
     echo "no";
 }

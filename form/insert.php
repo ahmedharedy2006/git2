@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -30,20 +30,20 @@
 </html>
 
 <?php
-require "connst.php";
+require "conn.php";
 
 if(isset($_POST['register'])){
-    $username=$_REQUEST['username'];
-    $password=$_REQUEST['password'];
+    $username= $_REQUEST['username'];
+    $password= $_REQUEST['password'];
 
     $sql="insert into accounts (username,password) values('$username','$password')";
     $result=mysqli_query($conn,$sql);
 
 
     if($result){
-        echo "record inserted";
+        echo "You have been registered successfully";
     }else{
-        echo "record not inserted";
+        echo "Something went wrong";
     }
 
 }
