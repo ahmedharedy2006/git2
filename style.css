@@ -64,6 +64,9 @@ margin-left: 520px;
 .d6-style{
 	display: inline;
 }
+.btn-primary{
+    margin: 5px;
+}
 
 <<<<<<< HEAD
 
@@ -124,8 +127,6 @@ nav {
 	font-weight: 600;
 }
 
-.btn-primary{
-    margin: 5px;
 =======
 .icon img{
 	width: 60px;

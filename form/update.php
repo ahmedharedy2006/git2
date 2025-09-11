@@ -27,14 +27,14 @@ $row = mysqli_fetch_assoc($result);
     </div>
     <div class="card-body">
 
-        <form action="update_back.php" method="post" >
+        <form action="#" method="post" >
 
             <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
             username:<input type="text" class="form-control" name="username"  value="<?php echo $row['username']; ?>">
             password:<input type="password" class="form-control" name="password" value="<?php echo $row['password']; ?>">&nbsp;
 
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-primary" name="submit">Update</button>
             <a class="btn btn-primary" href="read.php">Back</a>
 
         </form>
@@ -48,3 +48,20 @@ $row = mysqli_fetch_assoc($result);
 </body>
 </html>
 
+<?php
+require "conn.php";
+if(isset($_POST['submit'])) {
+    $id = $_REQUEST['id'];
+    $username = $_REQUEST['username'];
+    $password = $_REQUEST['password'];
+
+    $sql2 = "update accounts set username='$username' , password='$password' where id=$id";
+    $result2 = mysqli_query($conn, $sql2);
+
+    if ($result2) {
+        echo "<script>location.href='read.php'</script>";
+    } else {
+        echo mysqli_stmt_error($result);
+    }
+
+}
