@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-require "conn.php";
+require "conn_rel.php";
 
 $sql = "SELECT * FROM categories";
 $result = mysqli_query($conn, $sql);

@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-require 'conn.php';
+require 'conn_rel.php';
 
 $id = $_GET['id'];
 
@@ -55,7 +55,7 @@ if (isset($_POST['update'])) {
              WHERE id=$id";
 
     if (mysqli_query($conn, $sql3)) {
-        echo "Product updated successfully!";
+        echo "<script>location.href='read_rel.php'</script>";
     } else {
         echo "Error updating product: " . mysqli_error($conn);
     }

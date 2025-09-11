@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-require "conn.php";
+require "conn_rel.php";
 
 // SQL with INNER JOIN
 $sql = "SELECT products.id AS id, products.name AS product_name, products.price AS price, categories.name AS category_name
