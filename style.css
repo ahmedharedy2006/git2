@@ -1,12 +1,8 @@
   .d-style {
 	border-radius: 10px;
 	border: 3px solid black;
-	margin-top: 4px;
-	margin-right: 4px;
-	margin-bottom: 4px;
-	margin-left: 4px;
+	margin: 20px;
 	padding-top: 4px;
-	padding-right: 4px;
 	padding-bottom: 3px;
 	padding-left: 3px;
 }
@@ -131,3 +127,4 @@ nav {
     border: none;
 >>>>>>> 151adac924a3f20d98388dba667325d8975ebb38
 }
+
