@@ -1,3 +1,15 @@
+<?php
+require"conn.php";
+
+$id = (int)$_REQUEST['id'];
+
+$sql = "SELECT username FROM users WHERE id=$id";
+$result = mysqli_query($conn, $sql);
+
+ $row = mysqli_fetch_assoc($result);
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,7 +18,7 @@
     <title>Document</title>
 </head>
 <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB">
-<link href="/style.css" rel="stylesheet">
+<link href="/styles.css" rel="stylesheet">
 <body>
 
 <div class="card">
@@ -17,10 +29,10 @@
 
         <form method="post" >
 
-            username:<input type="text" class="form-control" name="username" placeholder="Username" autofocus >
+            username:<input type="text" class="form-control" name="username" value="<?php echo $row['username'];  ?>" placeholder="Username" autofocus >
 
-            <input type="submit" value="Delete" name="Delete" class="btn btn-primary">
-            <input type="reset" value="Clear" class="btn btn-primary">
+            <input type="submit" value="Delete" name="Delete" class="btn btn-danger">
+            <input type="reset" value="Clear" class="btn btn-default">
 
         </form>
 
@@ -35,12 +47,13 @@
 require "conn.php";
 
 if(isset($_POST["Delete"])){
-    $username = $_POST["username"];
+    $id = $_REQUEST['id'];
+    $username = $_REQUEST["username"];
 
-    $sql = "DELETE FROM accounts WHERE username = '$username'";
-    $result = mysqli_query($conn, $sql);
+    $sql2 = "DELETE FROM users WHERE username = '$username' ";
+    $result2 = mysqli_query($conn, $sql2);
 
-    if($result){
+    if($result2){
         echo "<script>location.href='read.php'</script>";
         }else{
         echo "delete fail";
